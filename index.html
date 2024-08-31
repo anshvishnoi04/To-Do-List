@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div>
+        <h2 class="heading">To-Do List Webapp</h2>
+      </div>
+
+      <div class="main">
+        <div class="do input">
+          <form class="form">
+            <div class="form2">
+              <div>
+                <input
+                  class="input1"
+                  placeholder="Title"
+                  id="input1"
+                  type="text"
+                  name="input1"
+                /><br />
+              </div>
+              <br />
+
+              <div class="text">
+                <textarea
+                  name="Description"
+                  placeholder="Description"
+                  id="Description"
+                  cols="65"
+                  rows="15"
+                ></textarea>
+              </div>
+
+              <div>
+                <button class="btn" id="button" type="submit1" name="submit">
+                  Save
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="do output">
+          <table style="width: 100%;" class="table">
+            <thead>
+              <tr class="tr" style="background-color: greenyellow;">
+                <th height="30px" width="6%" scope="col">Done</th>
+                <th width="15%" scope="col">Title</th>
+                <th width="70%" scope="col">Description</th>
+                <th width="10%" scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody style="background-color: #a9d4f5;"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer class="end">
+      <h4 style="color: rgb(240, 242, 246);">Created By Ansh Vishnoi</h4>
+      <a
+        href="https://www.linkedin.com/in/ansh-vishnoi-9a3648239"
+        target="_blank"
+        ><img
+          class="img"
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIAAgAMBEQACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcEBgECAwj/xABFEAABAwECBg0KBAUFAAAAAAABAAIDBAURBgcSIVORExYxNTZBUXFydLGy0RQiMlJhc4GhweEVMzRCI1STs/AXJJKi8f/EABoBAQADAQEBAAAAAAAAAAAAAAACAwUEAQb/xAAwEQACAQMBBgUDBAMBAAAAAAAAAQIDBBEzEjEyQVFxBRMUIfA0kbEiUmGBFSTBI//aAAwDAQACEQMRAD8AvFAYtfX09BDslS/JHEBnLuYKUIObwiupUjTWZGuzYU1MriKOkaG37shvJ1bi6VbJcTOKV7J8KOowgtXjgptR8V75FPqeerq9ENsFqaCm1HxTyIdR6ur0Q2wWpoKbUfFPIh1Hq6vRDbBamgptR8U8iHUerq9ENsFqaCm1HxTyIdR6ur0Q2wWpoKbUfFPIh1Hq6vRDbBamgptR8U8iHUerq9ENsFqaCm1HxTyIdR6ur0Q2wWpoKbUfFPIh1Hq6vRHBwgtXigp9R8V75FPqeeqq9EetNhTIx2TX0uSPWjP0Pioytv2snC9a40bHSVUNXCJaeQPYeMLllFxeGd0JxmsxPdeEjxqp2U1PJPIbmMaXFexTk8IjOSjFyZocsstqVb6qpOa/zW8QHJzLRSVNYRjyk6stpnWaqbF5kbbyNQXqj1PHLG4xnVUx/fd8FLZRDaY8pm0nyTZR5ljymbSfJNlDLHlM2k+SbKGWPKZtJ8k2UMseUzaT5JsoZY8pm0nyTZQyx5TNpPkmyhljymbSfJNlDLOW1Uo3XB3sITZR7tMyYp2TjIe0Bx4jxqLWCakn7HrZ9ZJY9c2RpJp35ns5R4hRnBVI/wAk6dR0ZZ5G+McHMDmm8EXg8qzjYRBYYzFlmtiBP8SQA8wzq+2WZnJevFLBrc7tgpg1vpXXfddi92Z8vZYI9TKggCAIAgCAIAgCAIAgOQSDeN0IDOe4TURdxjP8VBezLX7xNwwamMtj0+VutGTqNwXDWWKjNS2eaUSOw1/TU/T+inbcTKr3TXf/AIzXbR9Jg512RM+ZhqRWEAQBAEAQBAEAQBAEAQGZTH/aTDn7FF8SLI8LNtwT3pZ0j2rhr6jNS10kYmGn6en959FK24mV3umu/wDxmu2j6TPiuyJnTMNSIBAZNnNa+0KZj2hzXStBa4Xgi8KM+Fk6azNJm+/hVn/yFL/Rb4LO8yfVmx5NL9q+xX9YA2sqGtAAErgABuC8rSjwoxp8TPFekQgCAIAgCAIDLpv0k3MexRfEiceFm24Jb0t6Tu1cNfUZq2ukiDxo1k1FZtHLAQHGoAN4vBGSVdZRUptPoc/iMnGksdTVKvCGIPjFVE5l4PnMzj/Na7Y0uhlusuZ6QWnRT3bHUx3nicck/NHCS5ElOL3MywbxeM6gSPSnMrZ4zBfsocCy4X578y8ljHuSjnKxvJ3yvCb1Z/6DfBc+zb/Gde3dfz9iBmLzK8y37IXEuv5b866VjHscbzn3PaCgrKiPZIKaWRl92U1t4UXUjH2bJxpTkspHSopp6VwbURPiLheA8XXr2MlLcRlCUOJYPaCyrQqGB8NJK5p3CRk9qi6sFvZONGpJZUTpVWfWUgvqaaSNvrEXjWMy9jUjLczyVKcOJGMplZw4hovcQBynMvAYc9rUEHp1LCRxM87sU1CTIOpFczxGEOVRVHkkO4D50nNyBe+V7rJ55/6XhG/4uqiSpwYgmmdlPc995Au/cVm3SxVaNmxbdCLf8/kh8b29FH1kd0q2w1H2KfE9JdyubZ9OLmP0WnDcYcyOUys7xzSxflSvZ0XEI0me7TRN4M2pXOt+zY3VL3MdUxtIdcc2UFRWhHy5PB021STqxTfMve7MsM+nKNtTCCrhtitZscLmtqJGgZJH7j7VuU6ScEfM1arVSS/llm4vKp1dgzFPI1rXGV4ububqzLtYqm1YPaoJktW0tJs4r60sDIIzcZDc1nHlG9UxlLGzHmXzhDa25ciGbh7g46pEAriM+TshicGX89257dxXekrYzgo9fb5xtGzXMlj3GvY4c4IXMdfs0U3jBhqrHt58FNUSsppmCaNrTdkAkgi/nB+BC2LWSqU8te58/fQdKrhbmalJJJIb5HueeVxvXWkkcDbZ1Q8JGh3uqfj2KMt5ZHhZbOLHglTdJ/eKx7zWf9fg+hsPp4/OZGY3t6KPrI7pVlhqPsVeJ6S7lc2z6cXMfotOG4w5kcplYQEngxwjsvrUfeCrraUi+11o9z6C4gsA+pPne29/LQ63L3yvoKXBHsfKXGrLuy28VnBCH30neWTeav2N7w/QRH436uSKx6OlY65k85LwP3BovA1kH4KywinNvoVeKSapJLmVOtUwkXvgFM+owQsx8hvcIyy/2NcWj5BYdysVZI+ns5OVCLZpeOMD8Qs03Z9hf2hdlhwyM7xXfErxaBkBASNDvdU/HsUXxIsjwstnFjwSpuk/vFY93rM+hsPp4/OZG43d6aLrI7pVlhqPsVeJ6S7lcWz6cXMfotOG4w5kcplYQEngxwjsvrUfeCrraUi+11o9z6C4gsA+pPne29/LQ63L3yvoKXBHsfKXGrLuy28VnBCH30neWTeav2N7w/QRCY5PyLL6cnY1XWG+Rz+K8MSslpmIXji54G2b0ZP7jli3etL5yPprH6ePzmajjj/X2b7mTtC6rDhl/Rw+K74leLQMcICRod7qn49ii+JFkeFls4seCVN0394rHu9Zn0Hh/wBPH+/yRmN/eij6yO6VbYaj7FXieku5XNtenFzH6LShuMSZHKZWEBJ4McI7L61H3gq62lIvtdaPc+guILAPqT53tvfy0Oty98r6ClwR7Hylxqy7stvFZwQh99J3lk3mr9je8P0EQmOT8iy+nJ2NV1hvkc/ivDErJaZiF44ueBtm9GT+45Yt3rS+cj6ax+nj85mo44/19m+5k7Quqw4Zf0cPiu+JXi0DHCAkaHe6p+PYoviRZHhZbOLDglTdN/eKx7vWZ9B4f9PH+/yRmN/eij6yO6VbYaj7FXimku5XNs+nFzH6LShuMSoRymVhAZFn1bqCup6yNrXPgkbI1rtwkG/OozjtRcSdOexNSXI3X/VK1f5Gi/7+K4v8fDqzT/ys/wBqNHq53VVZPUvADppHSEDcBJv+q7orZSRmTltycnzNlwew5rrBsxlBTUtNJG1znZUmVfnN/EVzVbSNSW02dtC/lRhsJGJhThXVYSsp21VPBFsBcW7Ffnvu5T7FKjbxottMrubyVwkmsYIBdBxm3WHh9aFi2VBZ8FJSyRw5Vzn5V5vcTxH2rkq2caknJs0aPiE6VNQS3EbhRhLU4STQS1cEMRgaWtEV+e88d/MrKNBUcpMpubp3DTaxgg1ecgQEjQ73VPx7qi96LI8LLaxZcEqXpP7xWPd6z+cj6Gw+nj85kXje3pousjulWWGo+xT4ppLuVzbPpxcx+i04bjEqEcplYQBAEAQBAEAQBAEAQBASNDvdU/HsUXvLI8LLaxZcEqXpP7xWPd6z+cj6Gw+nj85kZjfB/BqRw4qkd1yssNV9irxNf+K7ldWuMuOKVudu5rWnD2MSoiMUyoIAgCAIAgCAIAgCAIAgJKnaY7Llcc2Xfd2KD4i2PCW1i0aW4JUt/G55H/IrHu9aR9DYr/XiZGHVlutSwJ4WfmDzmdIbihQqeXUUiy5pebScSoKNzZ4HUs2Z7Rdcd3/Atp79pHza6Mj6imkp3XPGbidxFTTyVyTTPJekThAEAQBAEAQBAEBygMijpH1DgbiI787uXmXjeCUY5MyqyqmaKgpG3uc4DJHLxBQyorbZaouclCO9l4YPUIs6x6akbuRxgX8vtWFOTnJyfM+npwVOCguRISMD2lrheDuqJMrPDPAyTyh9dZwyXnO4bgJ8V2W935f6Z7jOu7FVXtw9pfk0yWeppv4VfSm4ZiS26/6LRhKE+BmROFSnxxPAzUDs5gcOb/1WYkVZicbJZ+hfr+6YkMxOdks/Qv1/dMSGYHGy2foX6/umJDMRstn6F+v7piQzEbLZ+hfr+6YkMxOdls/Qv1/dMSGYjZbP0D9f3TEhmJxstn6F+v7piQzE5FRQsN7ack+1MSGYmREa60CIqKmcAc2UPFVTnTp8TL6dGrV4Ilg4DYHChcK2sudPxZvR5lm3Fy6vsvZGzaWcaH6n7s34C4ZlynacoDq5jXC5wvCAjqqw6KoN7ogD7EBi7V6D1SgG1eg5CvMAbV6DkK9wBtXoOQrzAG1eg5CmANq9ByFMAbV6D1V6BtWs/wBVANq1B6qADBegH7SgM2lsejps7IhfylAZ4AAuG4gOUB//2Q=="
+          alt="Linkedin"
+      /></a>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
